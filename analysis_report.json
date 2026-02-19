@@ -1,0 +1,184 @@
+{
+  "load_info": {
+    "rows": 10000,
+    "columns": 22,
+    "column_names": [
+      "index",
+      "Order ID",
+      "Date",
+      "Status",
+      "Fulfilment",
+      "Sales Channel",
+      "ship-service-level",
+      "Category",
+      "Size",
+      "Courier Status",
+      "Qty",
+      "currency",
+      "Amount",
+      "ship-city",
+      "ship-state",
+      "ship-postal-code",
+      "ship-country",
+      "B2B",
+      "fulfilled-by",
+      "Unnamed: 19",
+      "Unnamed: 20",
+      "Unnamed: 21"
+    ],
+    "dtypes": {
+      "index": "int64",
+      "Order ID": "str",
+      "Date": "str",
+      "Status": "str",
+      "Fulfilment": "str",
+      "Sales Channel": "str",
+      "ship-service-level": "str",
+      "Category": "str",
+      "Size": "str",
+      "Courier Status": "str",
+      "Qty": "object",
+      "currency": "str",
+      "Amount": "float64",
+      "ship-city": "str",
+      "ship-state": "str",
+      "ship-postal-code": "int64",
+      "ship-country": "str",
+      "B2B": "object",
+      "fulfilled-by": "str",
+      "Unnamed: 19": "float64",
+      "Unnamed: 20": "float64",
+      "Unnamed: 21": "float64"
+    },
+    "source_type": ".csv",
+    "memory_mb": 8.88
+  },
+  "cleaning": {
+    "duplicates_removed": 27,
+    "missing_handled": 30000.0,
+    "outliers_capped": 44.0
+  },
+  "analysis": {
+    "timestamp": "2026-02-17T03:05:27.298800",
+    "overview": {
+      "total_rows": 9973,
+      "total_columns": 19,
+      "numeric_columns": 3,
+      "categorical_columns": 16,
+      "memory_usage_mb": 1.64
+    },
+    "statistics": {
+      "numeric": {
+        "index": {
+          "count": 9973.0,
+          "mean": 40283.185601123034,
+          "std": 22958.653580255006,
+          "min": 0.0,
+          "25%": 20752.0,
+          "50%": 40473.0,
+          "75%": 59980.0,
+          "max": 79988.0
+        },
+        "Amount": {
+          "count": 9973.0,
+          "mean": 604.4484127143287,
+          "std": 304.1887561552151,
+          "min": 0.0,
+          "25%": 406.0,
+          "50%": 574.0,
+          "75%": 771.0,
+          "max": 1433.680000000004
+        },
+        "ship-postal-code": {
+          "count": 9973.0,
+          "mean": 462923.4453023163,
+          "std": 190760.46127774238,
+          "min": 0.0,
+          "25%": 380055.0,
+          "50%": 500030.0,
+          "75%": 600016.0,
+          "max": 855107.0
+        }
+      },
+      "categorical": {
+        "Order ID": {
+          "unique": 9858,
+          "top_3": {
+            "405-4755854-9568304": 3,
+            "406-8890381-8597153": 3,
+            "408-3317403-1729937": 3
+          }
+        },
+        "Date": {
+          "unique": 57,
+          "top_3": {
+            "04-14-22": 250,
+            "04-15-22": 240,
+            "04-20-22": 235
+          }
+        },
+        "Status": {
+          "unique": 8,
+          "top_3": {
+            "Shipped": 5853,
+            "Shipped - Delivered to Buyer": 2486,
+            "Cancelled": 1440
+          }
+        },
+        "Fulfilment": {
+          "unique": 3,
+          "top_3": {
+            "Amazon": 6721,
+            "Merchant": 3251,
+            "0": 1
+          }
+        },
+        "Sales Channel": {
+          "unique": 3,
+          "top_3": {
+            "Amazon.in": 9962,
+            "Non-Amazon": 10,
+            "0": 1
+          }
+        }
+      }
+    },
+    "correlations": {
+      "high_correlations": [],
+      "count": 0
+    },
+    "quality": {
+      "missing_values_total": 0,
+      "missing_by_column": {
+        "index": 0,
+        "Order ID": 0,
+        "Date": 0,
+        "Status": 0,
+        "Fulfilment": 0,
+        "Sales Channel": 0,
+        "ship-service-level": 0,
+        "Category": 0,
+        "Size": 0,
+        "Courier Status": 0,
+        "Qty": 0,
+        "currency": 0,
+        "Amount": 0,
+        "ship-city": 0,
+        "ship-state": 0,
+        "ship-postal-code": 0,
+        "ship-country": 0,
+        "B2B": 0,
+        "fulfilled-by": 0
+      },
+      "duplicate_rows": 0,
+      "completeness_pct": 100.0
+    },
+    "insights": [
+      {
+        "type": "scale",
+        "message": "Dataset contains 9,973 records with 19 features",
+        "priority": "info"
+      }
+    ]
+  }
+}
